@@ -1,0 +1,21 @@
+#include<stdio.h>  //printf 
+#include<time.h>  //time
+#include<stdlib.h>
+
+
+void main(){
+	srand(time(NULL));
+	
+	for (int i = 0; i < 10; i++){
+		
+		if (rand() % 5 == 0){
+			printf("ダメージをあたえられない!\n");
+			continue;
+		}
+		else{
+			int attack = 100;
+			printf("スライムに%dのダメージ!\n", attack / 2 + rand() % attack);//50〜150
+		}
+	}
+		getchar();
+	}
