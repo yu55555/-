@@ -1,0 +1,11 @@
+#include<stdio.h>  //printf 
+#include<stdlib.h>
+
+void main(){
+	srand(0);//unsigned int _Seed
+	for (int i = 0; i < 10; i++)
+	printf("%d\n", rand());
+
+
+		getchar();
+	}
