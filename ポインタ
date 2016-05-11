@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+void main()
+{
+	int a = 123;
+	printf("a:%d\n", a);
+	printf("&a:%d\n", &a);	//アドレス演算子
+	int *pA = &a;			//ポインタの定義
+	printf("pA:%d\n", pA);
+	printf("*pA:%d\n", *pA);//間接参照演算子
+	*pA = 456;
+	printf("a:%d\n", a);
+	getchar();
+}
