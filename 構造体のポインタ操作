@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+
+
+void main()
+{
+	typedef struct 
+	{
+		int hp;
+		int attack;
+		char a;
+	}CHARACTER;
+	CHARACTER player = { 15, 3 };
+	printf("player.hp:%d\n",player.hp);
+
+	CHARACTER *pPlayer = &player;
+	printf("pPlayer->hp:%d\n", pPlayer->hp);
+
+	printf("pPlayer.hp:%pe\n",pPlayer);
+	printf("pPlayer size:%d\n", sizeof(pPlayer));
+	printf("player size:%d\n", sizeof(player));
+	getchar();
+}
